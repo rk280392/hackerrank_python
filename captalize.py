@@ -1,8 +1,8 @@
 import os
 
 def solve(s):
-    return s.title()
-
+    my_list = s.split()
+    return ' '.join((word.capitalize() for word in my_list))
 if __name__ == '__main__':
 
     s = input()
